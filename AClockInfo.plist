@@ -1,0 +1,22 @@
+{
+    ApplicationDescription = "Analog Clock";
+    ApplicationIcon = "AClockIcon.tiff";
+    ApplicationName = AClock;
+    ApplicationRelease = "0.5.0";
+    Authors = (
+	"Banlu Kemiyatorn",
+	"Alexander Malmberg",
+	"G\U00FCrkan Seng\U00FCn",
+	"Riccardo Mottola"
+    );
+    CFBundleIdentifier = "org.gap.AClock";
+    Copyright = "Copyright (C) 2003-2021";
+    CopyrightDescription = "Released under GPL v2+";
+    FullVersionID = "0.5.0";
+    NSExecutable = AClock;
+    NSIcon = "AClockIcon.tiff";
+    NSMainNibFile = "AClock.gorm";
+    NSPrincipalClass = NSApplication;
+    NSRole = Application;
+    URL = "http://gap.nongnu.org/aclock/";
+}

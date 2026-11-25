@@ -1,0 +1,135 @@
+2021-03-12 Riccardo Mottola <rm@gmu.org>
+
+	* AppController.m:
+	Use a subview to draw the background so that the application icon is
+	not changed. Minor pixel size tweaks.
+
+2021-03-11 Riccardo Mottola <rm@gmu.org>
+
+	* AppController.m:
+	Save transparency as number, so it can be read back as float.
+
+2021-03-10 Riccardo Mottola <rm@gmu.org>
+
+	* Clock.m:
+	Destroy, not just release _cacheFrame, avoid crash.
+
+2021-03-08 Riccardo Mottola <rm@gmu.org>
+
+	* AppController.m:
+	* Resources/AClock.gorm
+	For the update frequency, actually use pulse, expressed as 2^exp.
+	(0 = 1, 1 = 1/2, 2 = 1/4....) this makes it much easier to store.
+
+2021-03-06 Riccardo Mottola <rm@gmu.org>
+
+	* AppController.m:
+	* Resources/GSFaceBackground.tiff
+	Set on startup a different icon so it us used for the background.
+
+2017-03-31 Riccardo Mottola <rm@gmu.org>
+
+	* AppController.h
+	* AppController.m
+	Correct signature to NSCalendarDate
+
+2017-01-26 Riccardo Mottola <rm@gmu.org>
+
+	* AppController.h
+	* AppController.m
+	Cleanup IBActions.
+
+2017-01-26 Riccardo Mottola <rm@gmu.org>
+
+	* Clock.m
+	Further DPS removal and removal of GSCurrentContext()
+
+2017-01-25 Riccardo Mottola <rm@gmu.org>
+
+	* Clock.m
+	Switch shadow  drawing to Bezier Paths
+
+2017-01-24 Riccardo Mottola <rm@gmu.org>
+
+	* Clock.m
+	Switch hand and face drawing to Bezier Paths
+
+2014-09-10 Riccardo Mottola <rm@gmu.org>
+
+	* NSColorExtensions.h
+	* NSColorExtensions.m
+	Add class extension to hande color encoding.
+
+	* AppController.m
+	* Clock.m
+	Switch to color extension instead of relying on gnustep internal colorFromString.
+
+2014-09-02 Riccardo Mottola <rm@gnu.org>
+
+	* Clock.m
+	Initialize array correctly.
+
+2014-04-16 Riccardo Mottola <rm@gnu.org>
+
+	* Clock.m
+	Do not draw inner circle anymore, even if intentional it is confusing.
+
+2014-04-16 Riccardo Mottola <rm@gnu.org>
+
+	* Clock.m
+	Do not use GS macros.
+
+2014-04-16 Riccardo Mottola <rm@gnu.org>
+
+	* AppController.h
+	* AppController.m
+	minor refinements, use IBAction instead of void
+
+2012-10-19 Sebastian Reitenbach <sebastia@l00-bugdead-prods.de>
+
+	* AppController.m
+	* Clock.m
+	fix format strings for NSInteger
+
+2011-07-01 Sebastian Reitenbach <sebastia@l00-bugdead-prods.de>
+
+	* AppController.m
+	* Clock.m
+	Fix gcc 2.95 build
+
+2011-05-23 Riccardo Mottola <rm@gnu.org>
+
+	* AppController.m
+	Fix AM/PM.
+
+2011-05-13 Riccardo Mottola <rm@gnu.org>
+
+	* AClock.pcproj
+	* Resources
+	New ProjectCenter project structure.
+
+2011-05-13 Riccardo Mottola for Sebastian Reitenbach
+
+	* AppController.h
+	* AppController.m
+	Use NSSound directly instead of external playsound.
+
+2011-05-10 Riccardo Mottola <rm@gnu.org>
+
+	* Clock.m:
+	Use more widespread rint. Cleanups.
+
+2011-05-06 Riccardo Mottola <rm@gnu.org>
+
+	* main.c:
+	Use standard main.
+
+0.2.3	Patch for major speed improvement (thanks Banlu Kemiyatorn)
+0.2.1	Patch for autoscaling (thanks Matt Rice)
+0.2	Hide Main Menu (thanks Alex Perez), new icon, new background image
+0.1.0	Release
+0.0.9	Add alarm, bug fixes.
+0.0.8	Remove SmoothSeconds. Preferences panel. Eye candies.
+0.0.5	Seconds pointer moves smoothly (changeable with the "defaults" tool)
+0.0.4	Added license information, seconds pointer is red, hourpointer
+	length increased (thanks Banlu Kemiyatorn and Alex Malmberg)
